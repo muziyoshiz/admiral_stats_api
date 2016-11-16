@@ -20,7 +20,11 @@ defmodule AdmiralStatsApi.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", AdmiralStatsApi do
-  #   pipe_through :api
-  # end
+  scope "/", AdmiralStatsApi do
+    pipe_through :api
+
+    scope "/v1", V1, as: :v1 do
+      get "/sources", SourceController, :index
+    end
+  end
 end
