@@ -37,6 +37,6 @@ config :admiral_stats_api, AdmiralStatsApi.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
   password: "",
-  database: "admiral_stats_api_dev",
+  database: "admiral_stats_development",
   hostname: "localhost",
   pool_size: 10
