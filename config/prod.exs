@@ -56,6 +56,5 @@ config :logger, level: :info
 #     config :admiral_stats_api, AdmiralStatsApi.Endpoint, server: true
 #
 
-# Finally import the config/prod.secret.exs
-# which should be versioned separately.
-import_config "prod.secret.exs"
+# Exrm でのデプロイ先の config ディレクトリから読み込む
+import_config "/var/www/admiral_stats_api/config/prod.secret.exs"
