@@ -56,6 +56,7 @@ config :logger, level: :info
 #
 #     config :admiral_stats_api, AdmiralStatsApi.Endpoint, server: true
 #
+config :phoenix, :serve_endpoints, true
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
